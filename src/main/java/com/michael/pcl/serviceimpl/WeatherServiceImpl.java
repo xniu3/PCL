@@ -26,7 +26,6 @@ public class WeatherServiceImpl implements WeatherService {
         HttpResponse response = HttpClient.newHttpClient()
                 .send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.body());
         // System.out.println(response);
         return response;
     }
